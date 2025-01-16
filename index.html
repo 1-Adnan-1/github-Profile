@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- * Font-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--* CSS Link-->
+    <link rel="stylesheet" href="style.css" />
+    <title>GitHub Profil Arama</title>
+  </head>
+  <body>
+    <form id="form" class="user-form">
+      <input
+        type="text"
+        id="search"
+        placeholder="GitHub Kullanıcısı"
+        autocomplete="off"
+      />
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+
+    <!-- Dil Seçeneği -->
+    <div id="language-selector">
+      <select id="language">
+        <option value="tr">Türkçe</option>
+        <option value="en">English</option>
+      </select>
+    </div>
+
+    <main id="main"></main>
+
+    <!-- * Axios-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- * JS Bağlantı-->
+    <script src="./app.js"></script>
+  </body>
+</html>
